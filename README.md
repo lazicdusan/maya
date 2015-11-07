@@ -1,3 +1,1 @@
-# maya 
-# maya 
-#maya 
+python code snippets for personal use with Autodesk Maya
