@@ -1,5 +1,5 @@
 #make a variable for PyNode
-ASSET='*_C_*_*_*'
+ASSET='*_assetName*'
 #pm PyNode 01
 CUSTOMPYNODE = pm.PyNode(ASSET)
 
@@ -95,15 +95,15 @@ mtoa.core.createOptions()
   
 # arnold render settings
 #PyNode 02
-arnoldRenderGlobal = pm.PyNode("defaultArnoldRenderOptions")
-arnoldRenderGlobal.AASamples.set(5)
-arnoldRenderGlobal.GIDiffuseSamples.set(1)
-arnoldRenderGlobal.GIGlossySamples.set(1)
-arnoldRenderGlobal.GIRefractionSamples.set(1)
-arnoldRenderGlobal.display_gamma.set(1.0)
-arnoldRenderGlobal.light_gamma.set(2.2)
-arnoldRenderGlobal.shader_gamma.set(2.2)
-arnoldRenderGlobal.texture_gamma.set(2.2)
+arnoldRenderGlobals = pm.PyNode("defaultArnoldRenderOptions")
+arnoldRenderGlobals.AASamples.set(5)
+arnoldRenderGlobals.GIDiffuseSamples.set(1)
+arnoldRenderGlobals.GIGlossySamples.set(1)
+arnoldRenderGlobals.GIRefractionSamples.set(1)
+arnoldRenderGlobals.display_gamma.set(1.0)
+arnoldRenderGlobals.light_gamma.set(2.2)
+arnoldRenderGlobals.shader_gamma.set(2.2)
+arnoldRenderGlobals.texture_gamma.set(2.2)
       
 # set output format to exr
 defaultArnoldDriver = pm.PyNode("defaultArnoldDriver")
