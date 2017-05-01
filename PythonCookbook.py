@@ -251,3 +251,5 @@ print ("Hello my name is %s and i am %s" %('Dusan','30'))
 print ("Hello my name is {} and i am {}".format('Dusan','30'))
 print ("Hello my name is {0} and i am {1}".format('Dusan','30'))
 print ("Hello my name is {user} and i am {age}".format(user='Dusan',age='30'))
+podaci = ['Dusan',30]
+print ("Hello my name is {} and i am {}".format(*podaci))
