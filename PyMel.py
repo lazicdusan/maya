@@ -189,3 +189,24 @@ for item in items:
 
 #get the scene name
 sn = pm.sceneName()
+
+sphere_node = pm.polySphere()[0]
+
+sphere_node.getChildren()
+sphere_node.getBoundingBox()
+sphere_node.centerPivots()
+sphere_node.getRotation()
+sphere_node.getScale()
+sphere_node.getTranslation()
+sphere_node.listAttr()
+sphere_node.setScale()
+sphere_node.setTranslation()
+sphere_node.getChildren()
+sphere_node.getBoundingBox()
+sphere_node.centerPivots()
+sphere_node.getRotation()
+sphere_node.getScale()
+sphere_node.getTranslation()
+sphere_node.listAttr()
+sphere_node.setScale()
+sphere_node.setTranslation()
