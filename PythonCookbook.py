@@ -253,3 +253,20 @@ print ("Hello my name is {0} and i am {1}".format('Dusan','30'))
 print ("Hello my name is {user} and i am {age}".format(user='Dusan',age='30'))
 podaci = ['Dusan',30]
 print ("Hello my name is {} and i am {}".format(*podaci))
+
+#map
+name_lengths = map(len, ["Mary", "Isla", "Sam"])
+print (name_lengths)
+
+
+names = ['Mary', 'Isla', 'Sam']
+secret_names = map(hash, names)
+
+#function returning multiple values
+def my_function():
+  return 1,2,3
+
+a,b,c = my_function()
+a #returns 1
+b #returns 2
+c #returns 3
